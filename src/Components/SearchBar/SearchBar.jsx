@@ -3,6 +3,7 @@ import { useState } from 'react'
 import PokemonCard from '../PokemonCard/PokemonCard';
 import './SearchBar.css'
 import Error from '../Error/Error';
+import Loader from '../Loader/Loader';
 
 const SearchBar = () => {
 
@@ -12,7 +13,7 @@ const SearchBar = () => {
     const [error, setError] = useState(false)
 
     const handleChange = (e) =>{
-        setSearchValue(e.target.value);
+        setSearchValue((e.target.value).toLowerCase());
     }
 
     const handleSubmit = async (e) => {
@@ -49,14 +50,15 @@ const SearchBar = () => {
             <form className='search-form' onSubmit={handleSubmit} >
                 <input className='search-box' placeholder='Aztecs' type="text" onChange={handleChange}/>
                 <input className='search-button' type="submit" />
-            </form>  
+            </form>
+            {loading && <Loader />} 
+            { error && <Error />} 
             {data && error === false && <PokemonCard 
             name={data.name}
             types={data.types}
             icon={data.sprites.other.home.front_default}
             />
             }
-            { error && <Error />}
         </div>
     )
 }
