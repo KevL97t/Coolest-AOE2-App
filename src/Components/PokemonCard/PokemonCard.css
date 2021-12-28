@@ -1,0 +1,43 @@
+.pokemoncard-main-container{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    max-width: 600px;
+    background-color: yellow;
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.icon-container img{
+    width: 100%;
+    height: 80%;
+    align-self: center;
+}
+
+.pokemon-name{
+    font-size: 2.4rem;
+}
+
+.types-title{
+    font-size: 2rem;
+}
+
+.types{
+    font-size: 1.6rem;
+}
+
+.add-button{
+    width: 160px;
+    height: 60px;
+    font-size: 1.6rem;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}

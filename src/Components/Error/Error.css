@@ -1,0 +1,11 @@
+.error-container{
+    margin: 100px auto;
+    background-color: rgb(196, 45, 45);
+    width: 80%;
+    max-width: 600px;
+    height: 150px;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 16px;
+}
