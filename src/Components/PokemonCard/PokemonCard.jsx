@@ -15,7 +15,7 @@ const PokemonCard = ({ name, types, icon, id }) => {
     window.alert("This pokemon is now in your team!");
   };
 
-  let bgColor = 'transparent';
+  let bgColor = "transparent";
 
   return (
     <article

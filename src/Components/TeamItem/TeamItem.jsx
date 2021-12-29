@@ -10,8 +10,8 @@ const TeamItem = ({ name, icon, quantity, id }) => {
   const dispatch = useDispatch();
 
   const handleRemoveFromTeam = () => {
-        let payload = id;
-        dispatch(removeFromTeam(payload));
+    let payload = id;
+    dispatch(removeFromTeam(payload));
   };
 
   return (
