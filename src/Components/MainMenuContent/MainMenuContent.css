@@ -1,0 +1,25 @@
+.main-menu-content-main-container{
+    position: fixed;
+    width: 100%;
+    max-width: 800px;
+    font-size: 60px;
+    font-weight: 600;
+    z-index: 2;
+    background-color: rgba(51, 48, 48, 0.795);
+    height: 100%;
+    color: var(--main-white);
+}
+
+.main-menu-list{
+    list-style: none;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.main-menu-list__item{
+    border-bottom: 1px solid white;
+    padding: 10px;
+}

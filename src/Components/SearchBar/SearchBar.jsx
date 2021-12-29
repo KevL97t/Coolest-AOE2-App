@@ -1,16 +1,24 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import PokemonCard from '../PokemonCard/PokemonCard';
 import './SearchBar.css'
 import Error from '../Error/Error';
 import Loader from '../Loader/Loader';
+import { useSelector, useDispatch } from 'react-redux';
+import { setPoketype } from '../../redux/actions/poketypeActions';
+
 
 const SearchBar = () => {
 
+    //STATES
     const [searchValue, setSearchValue] = useState(null);
     const [loading, setLoading] = useState(false)
     const [data, setData] = useState(null)
     const [error, setError] = useState(false)
+
+    //REDUX
+    const state = useSelector(state => state)
+    const dispatch = useDispatch();
 
     const handleChange = (e) =>{
         setSearchValue((e.target.value).toLowerCase());
@@ -29,7 +37,6 @@ const SearchBar = () => {
                 err.statusText = res.statusText || 'An error occurred';
                 throw err;
             }
-            
             const parsed = await res.json();
             setData(parsed);
 
@@ -40,16 +47,25 @@ const SearchBar = () => {
 
         } finally{
             setLoading(false);
+            // if(data){
+            //     let actualPayload = data.types[0].type.name;
+            //     dispatch(setPoketype(actualPayload))
+            // }
         }
     }
 
     console.log(data);
+    if(data){
+        let actualPayload = data.types[0].type.name;
+        dispatch(setPoketype(actualPayload))
+    }
+
 
     return (
         <div className='searchbar-container'>
             <form className='search-form' onSubmit={handleSubmit} >
-                <input className='search-box' placeholder='Aztecs' type="text" onChange={handleChange}/>
-                <input className='search-button' type="submit" />
+                <input className='search-box' placeholder='Charmander' type="text" onChange={handleChange}/>
+                <input className='search-button' type="submit" value='GO!' />
             </form>
             {loading && <Loader />} 
             { error && <Error />} 
@@ -57,6 +73,7 @@ const SearchBar = () => {
             name={data.name}
             types={data.types}
             icon={data.sprites.other.home.front_default}
+            id={data.id}
             />
             }
         </div>

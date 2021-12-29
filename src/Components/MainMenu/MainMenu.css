@@ -1,0 +1,21 @@
+.main-menu-icon{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 3;
+    cursor: pointer;
+}
+
+
+.main-menu-icon-close{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 3;
+    cursor: pointer;
+    color: white;
+}
