@@ -1,0 +1,17 @@
+.poweredby-maincontainer{
+    display: flex;
+    align-self: center;
+    position: absolute;
+    top: 95vh;
+}
+
+.poweredby-text{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.poweredby-logo{
+    width: 100px;
+    height: 40px;
+    margin-top: -18px;
+}

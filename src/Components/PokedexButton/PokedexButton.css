@@ -10,6 +10,7 @@
 
 @media screen and (min-width: 1000px){
     .pokedex-button-icon{
-        margin-left: 95vw;
+        margin-left: 94vw;
+        margin-top: 30px;
     }
 }

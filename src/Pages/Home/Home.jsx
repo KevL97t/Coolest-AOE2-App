@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import SearchBar from "../../Components/SearchBar/SearchBar";
 import MainMenu from "../../Components/MainMenu/MainMenu";
 import PokedexButton from "../../Components/PokedexButton/PokedexButton";
+import PoweredBy from "../../Components/PoweredBy/PoweredBy";
 
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
         <div>
             <SearchBar />
         </div>
+        <PoweredBy />
     </div>
   );
 };

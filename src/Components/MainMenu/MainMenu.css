@@ -19,3 +19,14 @@
     cursor: pointer;
     color: white;
 }
+
+@media screen and (min-width: 1000px){
+    .main-menu-icon{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .main-menu-icon-close{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+}

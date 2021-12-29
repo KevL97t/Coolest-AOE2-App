@@ -23,3 +23,14 @@
     border-bottom: 1px solid white;
     padding: 10px;
 }
+
+.main-menu-list__item a{
+    text-decoration: none;
+    font-size: 2.4rem;
+    color: var(--main-white);
+}
+
+.main-menu-list__item a:hover{
+    color: var(--grass);
+    transition: .4s ease-in-out;
+}

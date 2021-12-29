@@ -16,7 +16,7 @@ const PokedexButton = () => {
     return (
         <div className='pokedex-button-main-container'>
             <div className='pokedex-button-icon-container'>
-                <MdCatchingPokemon onClick={handleOpenTeam} className='pokedex-button-icon'/>    
+                <MdCatchingPokemon onClick={handleOpenTeam} className='animate__animated animate__heartBeat animate__repeat-3 3 animate__delay-2s 2s animate__slower	3s pokedex-button-icon'/>    
             </div>
             {openTeam && <TeamPreview setTeamState={ setOpenTeam } />} 
         </div>

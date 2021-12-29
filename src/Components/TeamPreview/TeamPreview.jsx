@@ -27,7 +27,7 @@ const TeamPreview = ({ setTeamState }) => {
               />
             ))
             :
-            <p className="nothing-message">Whoops! there's nothing around here yet :c </p>
+            <p className="nothing-message">Whoops! there's nothing around here yet :c <br /> <span>Add a pokemon to you team now to see it here!</span></p>
         }
         </div>
         <button onClick={handleCloseTeamPreview} className="team__close-button">
