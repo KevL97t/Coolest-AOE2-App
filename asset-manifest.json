@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/coolest-aoe2-app/static/css/main.d93f0045.css",
+    "main.js": "/coolest-aoe2-app/static/js/main.7d8c2b51.js",
+    "static/js/787.2d352fb3.chunk.js": "/coolest-aoe2-app/static/js/787.2d352fb3.chunk.js",
+    "static/media/logo.svg": "/coolest-aoe2-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/coolest-aoe2-app/index.html",
+    "main.d93f0045.css.map": "/coolest-aoe2-app/static/css/main.d93f0045.css.map",
+    "main.7d8c2b51.js.map": "/coolest-aoe2-app/static/js/main.7d8c2b51.js.map",
+    "787.2d352fb3.chunk.js.map": "/coolest-aoe2-app/static/js/787.2d352fb3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d93f0045.css",
+    "static/js/main.7d8c2b51.js"
+  ]
+}
